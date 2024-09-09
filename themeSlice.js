@@ -12,9 +12,14 @@ const themeSlice = createSlice({
   initialState,
   reducers: {
     toggleTheme: (state) => {
-      const newDarkTheme = !state.darkTheme;
-      state.darkTheme = newDarkTheme;
-      localStorage.setItem('darkTheme', newDarkTheme ? 'true' : 'false');
+      try {
+        const newDarkTheme = !state.darkTheme;
+        state.darkTheme = newDarkTheme;
+        localStorage.setItem('darkTheme', newDarkTheme ? 'true' : 'false');
+      } catch (error) {
+        console.error('Failed to toggle theme:', error);
+      }
+     
     },
     resetLocalStorage: (state, action) => {
       state.darkTheme = action.payload;

@@ -9,12 +9,12 @@ module.exports = {
         
         dark: {
           primary: '#313033', // Cor primária para o tema dark
-          secondary: '#313033', // Cor secundária para o tema dark
+          secondary: '#ffffff', // Cor secundária para o tema dark
           button: "white",
         },
         light: {
           primary: '#ffffff', // Cor primária para o tema light
-          secondary: '#FFDFB3', // Cor secundária para o tema light
+          secondary: '#000000', // Cor secundária para o tema light
           footer: "#28211D",
           button: "#7F56D9",
         },
@@ -33,6 +33,7 @@ module.exports = {
       
       fontFamily: {
         manrope: ["Manrope", "sans-serif"],
+        dotGothic: ["DotGothic16", "sans-serif"],
       },
     },
     screens: {

@@ -1,7 +1,7 @@
 const styles = {
-    boxWidth: "",
-    Layout: "h-screen flex item-center justify-center justify-center overflow-hidden",
-    navbar: "w-[1276px] h-[49px] flex justify-between items-center border border-red-500 mt-[43px] font-manrope",
+    
+    Layout: "h-screen flex items-center justify-center overflow-hidden ",
+    navbar: "w-[1276px] h-[49px] flex item-center font-manrope",
     heading2: "font-poppins font-semibold xs:text-[48px] text-[40px] text-white xs:leading-[76.8px] leading-[66.8px] w-full",
     paragraph: "font-poppins font-normal text-dimWhite text-[18px] leading-[30.8px]",
   

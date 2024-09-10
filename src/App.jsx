@@ -2,8 +2,10 @@ import { useSelector } from 'react-redux';
 
 //Components
 import styles from './styles';
-import Home from "./pages/home/home"
-import Cases from "./pages/cases/cases"
+/* import Home from "./pages/home/home" */
+/* import Cases from "./pages/cases/cases" */
+import Personal from "./pages/personal/personal"
+
 
 
 
@@ -17,9 +19,9 @@ function App() {
                       border-t-4 border-b-4 ${darkTheme ? "border-dark-secondary" : "border-light-secondary"}
                       ${styles.Layout}                      
                     `}>
-        <Home/>
-        {/* <Cases/> */}
-        
+        {/* <Home/> */}
+      {/*   <Cases/> */}
+        <Personal/>
     
    </main>
     

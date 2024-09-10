@@ -3,7 +3,7 @@ import Hero from "../../components/Hero"
 
 const Header = () => {
   return (
-    <header className={`w-[1310px] h-[980px] lg:h-[600px] flex flex-col items-center`}>
+    <header className={`w-[1310px] xl:h-[980px] lg:h-[600px] flex flex-col items-center`}>
         <Navbar/> 
         <Hero/>
         </header>

@@ -9,7 +9,7 @@ module.exports = {
         
         dark: {
           primary: '#313033', // Cor primária para o tema dark
-          secondary: '#ffffff', // Cor secundária para o tema dark
+          secondary: '#9FA2B2', // Cor secundária para o tema dark
           button: "white",
         },
         light: {

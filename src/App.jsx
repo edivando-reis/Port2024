@@ -2,7 +2,7 @@ import { useSelector } from 'react-redux';
 
 //Components
 import styles from './styles';
-/* import Home from "./pages/home" */
+import Home from "./pages/home/home"
 import Cases from "./pages/cases/cases"
 
 
@@ -17,8 +17,8 @@ function App() {
                       border-t-4 border-b-4 ${darkTheme ? "border-dark-secondary" : "border-light-secondary"}
                       ${styles.Layout}                      
                     `}>
-       {/*  <Home/> */}
-        <Cases/>
+        <Home/>
+        {/* <Cases/> */}
         
     
    </main>

@@ -7,7 +7,7 @@ const Hero = () => {
 
     const darkTheme = useSelector((state) => state.theme.darkTheme)
   return (
-    <div className={`${darkTheme ? "text-light" : "text-dark"} w-[1310px] h-[700px] flex items-center mt-[110px]`}>
+    <div className={`${darkTheme ? "text-light" : "text-dark"} w-[1310px] h-[700px] flex items-center lg:mt-[0px] mt-[110px]`}>
         <Menu/>
         <Title/>
         <Botao/>

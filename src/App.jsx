@@ -1,12 +1,15 @@
 import { useSelector } from 'react-redux';
 
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
 //Components
 import styles from './styles';
 import Home from "./pages/home/home"
-/* import Cases from "./pages/cases/cases" 
+import Projects from "./pages/projects/project"
 import Personal from "./pages/personal/personal"
 import AboutMe from "./pages/aboutMe/aboutMe" 
-import Footer from "./pages/footer/footer" */
+import Footer from "./pages/footer/footer"
+
 
 
 
@@ -21,7 +24,16 @@ function App() {
                       border-t-4 border-b-4 ${darkTheme ? "border-dark-secondary" : "border-light-secondary"}
                       ${styles.Layout}                      
                     `}>
-      <Home/>  
+        <Router>
+          <Routes>
+            <Route path="/" element={<Home/>} />
+            <Route path="/projects" element={<Projects/>} />
+            <Route path="/personal" element={<Personal/>} />
+            <Route path="/aboutMe" element={<AboutMe/>} />
+            <Route path="/contact" element={<Footer/>} />
+          </Routes>
+        </Router>
+      {/* <Home/>   */}
        {/*  <Cases/> */}
         {/* <Personal/> */}
      {/*  <AboutMe /> */}

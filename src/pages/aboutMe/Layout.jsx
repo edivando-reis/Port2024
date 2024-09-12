@@ -15,12 +15,12 @@ const Layout = () => {
 
     const darktheme = useSelector((state) => state.theme.darkTheme)
   return (
-    <div className={`BOXABOUT ${darktheme? "text-dark" : "text-light"} xl:w-[1213px] xl:h-[813px] flex flex-col `}>
+    <div className={`BOXABOUT ${darktheme? "text-dark" : "text-light"} xl:w-[1310px] xl:h-[813px] flex flex-col items-center justify-center `}>
         <div className="TITLE xl:w-[142px] xl:h-[60px] flex flex-col ">
             <h1 className={`xl:text-[30px] font-manrope font-extrabold`}>about me</h1>
         <div className={`BAR ${darktheme? "bg-light-primary" : "bg-dark-primary"} xl:w-[90px] xl:h-[7px] `}></div>
         </div>
-        <div className="IMG&NAME xl:w-[1030px] flex flex-row items-center xl:h-[198px]  xl:ml-[80px] xl:mt-[82px]">
+        <div className="IMG&NAME xl:w-[1030px] flex flex-row items-center xl:h-[198px]  xl:ml-[80px] xl:mt-[82px] ">
             <div className="IMG xl:w-[198px] xl:h-[198px] "><img className="xl:w-[198px] xl:h-[198px] rounded-[151px]" src={PERFIL} alt="" /></div>
             <div className="NAME xl:w-[761px] xl:h-[168px] flex flex-col xl:ml-[57px] ">
                 <div className={`AUTHOR font-manrope xl:text-[30px] font-extrabold`}>Edivando Reis de Siqueira</div>
@@ -36,7 +36,7 @@ const Layout = () => {
                 </div>
             </div>
         </div>
-        <div className={`EXP1BOX xl:w-[1195px] xl:h-[72px] flex flex-row xl:gap-[34px]  xl:mt-[74px]`}>
+        <div className={`EXP1BOX xl:w-[1180px] xl:h-[72px] flex flex-row xl:gap-[34px]  xl:mt-[74px] `}>
             <div className={`EXP1BOX xl:w-[278px] xl:h-[72px] flex flex-row items-center`}>
                 <div className={`IMAGE xl:w-[29px] xl:h-[30px]  xl:ml-[20px]`}>
                     <img src={darktheme ? DESIGNWHITE : DESIGNBLACK} alt="" aria-hidden="true"/> 
@@ -78,7 +78,7 @@ const Layout = () => {
                 </div>
             </div>
         </div>
-        <div className={`KNWOLEDGE xl:w-[1195px] flex flex-row xl:gap-[46px] xl:h-[264px]  xl:mt-[63px]`}>
+        <div className={`KNWOLEDGE xl:w-[1190px] flex flex-row xl:gap-[46px] xl:h-[264px]  xl:mt-[63px] `}>
             <div className={`BOX1 xl:w-[374px] xl:h-[257px] items-center flex flex-row `}>
                 <div className={`line xl:w-[1px] xl:h-[226px] xl:ml-[20px] ${darktheme? "bg-white" : "bg-slate-400"}`}></div>
                 <div className={`TEXTBOX xl:w-[296px] xl:h-[214px] flex flex-col xl:ml-[23px] `}>

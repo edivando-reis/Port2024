@@ -33,7 +33,7 @@ const Layout = () => {
                            flex 
                            justify-between
                            items-center
-                           xl:mt-[150px] 
+                           xl:mt-[300px] 
                            xl:ml-[60px]`}> 
               <span className={`font-manrope xl:text-[36px] font-extrabold`}>
                 ers.

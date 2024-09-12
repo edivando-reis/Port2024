@@ -2,12 +2,13 @@ import { useSelector } from 'react-redux'
 import Menu from '../../components/Menu'
 
 import Botao from "./Botao"
-import Carousel from "../../components/Carousel"
+import Carousel from './Carousel'
+
 const Hero = () => {
 
     const darkTheme = useSelector((state) => state.theme.darkTheme)
   return (
-    <div className={`${darkTheme ? "text-light" : "text-dark"} w-[1310px] h-[700px] flex items-center mt-[110px] `}>
+    <div className={`${darkTheme ? "text-light" : "text-dark"} xl:w-[1310px] xl:h-[700px] flex items-center mt-[110px] `}>
         <Menu/>
         <Carousel/>
         <Botao/>

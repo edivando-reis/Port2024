@@ -1,16 +1,18 @@
 import { useSelector } from "react-redux"
 
-import INSEP from "../assets/img/INSEPPORT.png"
-import RUDA from "../assets/img/ATELIEPORT.png"
-import FELIPE from "../assets/img/FELIPEPORT.png"
+import INSEP from "../../assets/img/INSEPPORT.png"
+import RUDA from "../../assets/img/ATELIEPORT.png"
+import FELIPE from "../../assets/img/FELIPEPORT.png"
 
-const Carousel = () => {
 
-    const darkTheme = useSelector((state) => state.theme.darkTheme);
+const Title = () => {
+
+    const darkTheme = useSelector((state) => state.theme.darkTheme)
   return (
-    <div className={`${darkTheme? "text-dark" : "text-light "}-`}>
-        <div  className={`BOX flex flex-row xl:w-[1310px] xl:h-[700px]  border border-red-300`}>
-          <div className={`TITLE xl:w-[57px] xl:h-[217px] flex flex-row}`}>
+    <>
+    
+    <div className={`BOXTITLE xl:w-[1310px] xl:h-[700px] flex flex-row justify-center items-center`}>
+    <div className={`TITLE xl:w-[57px] xl:h-[217px] flex flex-row} xl:mb-[110px]`}>
             <h1 className={`${darkTheme ? "text-dark" : "text-light"}
                             py-2 
                             text-center 
@@ -20,12 +22,13 @@ const Carousel = () => {
                             font-manrope 
                             text-[23px] 
                             font-extrabold 
+                            
                           `}>amazing projects
             </h1>
             <div className={`${darkTheme? "bg-white" : "bg-black"} w-[7px] h-[90px]`}></div>
           </div>
-          <div className={`CAROUSELBOX xl:w-[700px] xl:h-[321px] flex flex-row gap-12 justify-center border border-blue-600`}>
-            <div className={`SLIDE1 ${darkTheme? "text-dark" : "text-light"} xl:w-[281px] xl:h-[321px] flex flex-col`}>
+        <div className={` CAROUSEL xl:w-[1000px] xl:h-[321px] flex flex-row gap-12 justify-center ${darkTheme ? "text-dark" : "text-light"}`}>
+        <div className={`SLIDE1 ${darkTheme? "text-dark" : "text-light"} xl:w-[281px] xl:h-[321px] flex flex-col`}>
               <div className={`BOXIMG xl:w-[281px] xl:h-[281px] ${darkTheme? "bg-gray-400" : "bg-gray-100"}`}>
                 <img src={INSEP} alt="" />
               </div>
@@ -55,10 +58,10 @@ const Carousel = () => {
                    rel="noreferrer"
                    >Portfolio Felipe fotografia</a></div>
             </div>
-          </div>
         </div>
     </div>
+   </>
   )
 }
 
-export default Carousel
+export default Title

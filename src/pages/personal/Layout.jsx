@@ -8,11 +8,12 @@ const Layout = () => {
     const darkTheme = useSelector((state) => state.theme.darkTheme)
   return (
     <div className={`BoxExt ${darkTheme? "text-dark" : "text-light"}
-                     xl:w-[1222px] 
+                     xl:w-[1310px] 
                      xl:h-[700px]
                      lg:w-[]
                      lg:h-[] 
                      flex flex-col
+                     
                      `}>
             <div className={`Title flex xl:flex-col xl:justify-end`}>
                 <h1 className={`text-[29px] flex font-manrope font-extrabold`}>Personal Projects</h1> 
@@ -21,9 +22,7 @@ const Layout = () => {
             <div className={`${darkTheme? "text-dark" : "text-light"} 
                              xl:w-[1150px] 
                              xl:h-[543px] 
-                             
                              ml-[15px] 
-                             mt-[20px] 
                              flex 
                              flex-col 
                              items-center 

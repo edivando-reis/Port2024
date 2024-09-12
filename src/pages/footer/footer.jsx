@@ -1,9 +1,9 @@
 import Header from "./Header"
 
-const home = () => {
+const footer = () => {
   return (
     <Header/>
   )
 }
 
-export default home
+export default footer

@@ -2,6 +2,7 @@ import { useSelector } from 'react-redux';
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
+
 //Components
 import styles from './styles';
 import Home from "./pages/home/home"
@@ -25,19 +26,18 @@ function App() {
                       ${styles.Layout}                      
                     `}>
         <Router>
-          <Routes>
+         
+            <Routes location={location}>
             <Route path="/" element={<Home/>} />
             <Route path="/projects" element={<Projects/>} />
             <Route path="/personal" element={<Personal/>} />
             <Route path="/aboutMe" element={<AboutMe/>} />
             <Route path="/contact" element={<Footer/>} />
           </Routes>
+            
+          
         </Router>
-      {/* <Home/>   */}
-       {/*  <Cases/> */}
-        {/* <Personal/> */}
-     {/*  <AboutMe /> */}
-     {/* <Footer/> */}
+
    </main>
     
   )
